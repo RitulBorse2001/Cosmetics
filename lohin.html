@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+  <section class="nav">
+    <a href="recoverhome.html" class="logo"><img src="./image/logo1.png" alt=""></a>
+    <ul class="navlist">
+        <li><a href="recoverhome.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn">Product</button>
+            <div class="dropdown-content">
+              <!-- <a href="sambox.html">Lipstick</a> -->
+              <a href="eyemakeup.html">Eye Shadow</a>
+              <a href="perfume.html">perfume</a>
+              <a href="nail.html">Nail Polish</a>
+              <a href="compact.html">compact</a>
+            </div>
+          </div>
+          <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</section>
+    <div id="login-form-wrap">
+        <h2>SignIn</h2>
+        <form id="login-form">
+          <p>
+          <input type="text" id="email"  placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
+          </p>
+          <p>
+          <input type="password" id="pass" name="pass" placeholder="Password" required><i class="validation"><span></span><span></span></i>
+          </p>
+          <p>
+          <input type="reset" id="login" value="SignIn" onclick="fun()">
+          </p>
+        </form>
+        <div id="create-account-wrap">
+          <p>Not a member? <a href="signup.html" id="lg">Create Account</a><p>
+        </div><!--create-account-wrap-->
+      </div><!--login-form-wrap-->
+      <script >
+        function fun()
+    {
+        var login=document.getElementById("email").value;
+        var pass=document.getElementById("pass").value;
+        if(login=="dp7751372@gmail.com" && pass=="ritul@123")
+        {
+          alert("success");
+            window.location.assign("recoverhome.html");
+            
+        }
+        else{
+        alert("something wrong try again");
+        }
+    }
+      </script>
+</body>
+</html>
